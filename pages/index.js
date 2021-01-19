@@ -1,14 +1,14 @@
-import Nav from '../components/nav'
+import RandomQuote from "../components/random-quote"
 
 export default function IndexPage() {
   return (
-    <div>
-      <Nav />
-      <div className="py-20">
-        <h1 className="text-5xl text-center text-gray-700 dark:text-gray-100">
-          Next.js + Tailwind CSS 2.0
-        </h1>
-      </div>
-    </div>
+    <>
+      <h1 className="text-2xl font-bold text-center">
+        {
+          "A creative R&D and Front-end Innovation team imagining and inventing a better future."
+        }
+      </h1>
+      <RandomQuote />
+    </>
   )
 }

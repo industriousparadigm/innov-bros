@@ -6,14 +6,20 @@
 @tailwind components;
 /* Stop purging. */
 
-html,
-body {
-  @apply bg-gray-50 dark:bg-gray-900;
+p,ol,ul,li {
+  color: #111111;
 }
 
-/* Write your own custom component styles here */
-.btn-blue {
-  @apply px-4 py-2 font-bold text-white bg-blue-500 rounded;
+footer,nav>ul>li {
+  color: #696969;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  color: black;
+}
+
+.list-lower-alpha {
+  list-style-type: lower-alpha;
 }
 
 /* Start purging... */

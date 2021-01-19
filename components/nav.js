@@ -1,30 +1,23 @@
-import Link from 'next/link'
-
-const links = [
-  { href: 'https://github.com/vercel/next.js', label: 'GitHub' },
-  { href: 'https://nextjs.org/docs', label: 'Docs' },
-]
+import Image from "next/image"
+import NavItem from "./nav-item"
+import siteData from "../siteData"
 
 export default function Nav() {
   return (
-    <nav>
-      <ul className="flex items-center justify-between p-8">
-        <li>
-          <Link href="/">
-            <a className="text-blue-500 no-underline text-accent-1 dark:text-blue-300">
-              Home
-            </a>
-          </Link>
-        </li>
-        <ul className="flex items-center justify-between space-x-4">
-          {links.map(({ href, label }) => (
-            <li key={`${href}${label}`}>
-              <a href={href} className="no-underline btn-blue">
-                {label}
-              </a>
-            </li>
-          ))}
-        </ul>
+    <nav className="flex flex-wrap justify-center sticky top-0 bg-white z-10">
+      <div className="h-28 w-2/3 md:w-1/5 relative">
+        <Image
+          layout="fill"
+          objectFit="contain"
+          src="/theinnovationbrothers-logo-trimmy.png"
+          alt="the innovation brothers logo"
+        />
+      </div>
+
+      <ul className="flex justify-around w-full md:w-4/5 px-8 py-3 text-gray-500">
+        {siteData.navItems.map((item) => (
+          <NavItem item={item} key={item.name} />
+        ))}
       </ul>
     </nav>
   )
