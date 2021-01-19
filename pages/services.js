@@ -1,5 +1,3 @@
-import Image from "next/image"
-
 export default function ServicesPage() {
   return (
     <>
@@ -8,13 +6,8 @@ export default function ServicesPage() {
         innovative by identifying, creating and realizing growth opportunities
         through innovation.
       </h1>
-      <div className="h-64 w-full relative">
-        <Image
-          layout="fill"
-          objectFit="contain"
-          src="/innovbros-key-activities.png"
-          alt="key activities"
-        />
+      <div className="w-full py-8 relative">
+        <img src="/innovbros-key-activities.png" alt="key activities" />
       </div>
       <section className="mb-4">
         <ol className="list-decimal list-inside px-8">

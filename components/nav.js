@@ -1,14 +1,11 @@
-import Image from "next/image"
 import NavItem from "./nav-item"
 import siteData from "../siteData"
 
 export default function Nav() {
   return (
     <nav className="flex flex-wrap justify-center sticky top-0 bg-white z-10">
-      <div className="h-28 w-2/3 md:w-1/5 relative">
-        <Image
-          layout="fill"
-          objectFit="contain"
+      <div className="h-28 w-2/3 pt-4 md:w-1/5 relative">
+        <img
           src="/theinnovationbrothers-logo-trimmy.png"
           alt="the innovation brothers logo"
         />
