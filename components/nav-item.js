@@ -1,5 +1,5 @@
 import { useRouter } from "next/router"
-import Link from "next/Link"
+import Link from "next/link"
 
 const NavItem = ({ item }) => {
   const { pathname } = useRouter()
