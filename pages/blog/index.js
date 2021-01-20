@@ -4,7 +4,6 @@ import { fetchBlogPosts } from "../../utils/contentful"
 import Link from "next/link"
 
 const Blogs = ({ posts }) => {
-  console.log({ posts })
   return (
     <>
       <Heading large>Blog</Heading>

@@ -34,7 +34,6 @@ const renderBlogContent = (content) => {
 }
 
 function BlogPost({ post }) {
-  console.log({ post })
   return (
     <>
       <Heading>{post.title}</Heading>
@@ -46,8 +45,6 @@ function BlogPost({ post }) {
 export async function getStaticProps(context) {
   const res = await fetchBlogPost(context.params.slug)
   const post = res?.[0]?.fields
-
-  console.log({ context })
 
   return {
     props: {
