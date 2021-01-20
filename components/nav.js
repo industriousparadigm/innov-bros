@@ -15,7 +15,7 @@ export default function Nav() {
         </Link>
       </div>
 
-      <ul className="flex justify-around w-full lg:w-3/4 px-8 py-3 text-gray-500">
+      <ul className="flex justify-around w-full ml-0 lg:w-3/4 px-8 py-3 text-gray-500">
         {siteData.navItems.map((item) => (
           <NavItem item={item} key={item.name} />
         ))}
