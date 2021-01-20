@@ -11,7 +11,7 @@ const RandomQuote = () => {
   }
 
   return (
-    <div className="m-12 text-center">
+    <div className="m-12 md:px-12 lg:px-32 text-center">
       <p className="mb-4" key={quote._id}>{`"${quote.quote}"`}</p>
       <p className="text-sm mb-8">
         <em>{quote.author}</em>

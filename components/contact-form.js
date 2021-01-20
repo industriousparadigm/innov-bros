@@ -5,7 +5,7 @@ const ContactForm = () => {
       action="/contact-success"
       method="POST"
       data-netlify="true"
-      className="flex flex-col justify-between h-72"
+      className="flex flex-col justify-between h-72 md:mx-16 lg:mx-32"
     >
       <input type="hidden" name="form-name" value="contact" />
       <label className="block">
@@ -24,7 +24,7 @@ const ContactForm = () => {
           placeholder="Type your message here"
         ></textarea>
       </label>
-      <button className="mx-auto uppercase px-8 py-2 rounded bg-gray-900 text-blue-50 max-w-max">
+      <button className="mx-auto px-8 py-2 rounded bg-gray-900 text-blue-50 max-w-max">
         Send
       </button>
     </form>

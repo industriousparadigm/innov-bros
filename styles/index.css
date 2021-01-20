@@ -1,6 +1,12 @@
 @tailwind base;
 
-/* Write your own custom base styles here */
+/* Custom base styles  */
+@layer base {
+  p {
+    @apply mb-4;
+  }
+}
+
 
 /* Start purging... */
 @tailwind components;

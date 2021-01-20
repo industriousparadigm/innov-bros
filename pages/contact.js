@@ -2,6 +2,7 @@ import ContactForm from "../components/contact-form"
 import IconLinkedin from "../components/icon-linkedin"
 import IconEmail from "../components/icon-email"
 import ExternalLink from "../utils/external-link"
+import Paragraph from "../components/paragraph"
 
 const Contact = () => {
   return (
@@ -14,9 +15,10 @@ const Contact = () => {
           <IconEmail height={56} />
         </ExternalLink>
       </div>
-      <p className="text-center">
-        Write to us using the options above or the form below.
-      </p>
+      <Paragraph center>
+        You can reach us via the options above or the form below. Either way, we
+        will respond to your query as soon as we can.
+      </Paragraph>
       <ContactForm />
     </>
   )

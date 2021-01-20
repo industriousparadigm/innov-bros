@@ -9,8 +9,8 @@ const NavItem = ({ item }) => {
     <li className="flex items-center">
       <Link href={item.path}>
         <a
-          className={`font-normal hover:text-black ${
-            isCurrentPage ? "text-black font-bold" : ""
+          className={`font-normal text-gray-600 hover:text-black ${
+            isCurrentPage ? "text-gray-900 font-bold" : ""
           } transition duration-300 ease-in-out`}
         >
           {item.name}

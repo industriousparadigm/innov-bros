@@ -37,11 +37,13 @@ function MyApp({ Component, pageProps }) {
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff" />
       </Head>
-      <Nav />
-      <main className="container mx-auto my-12 px-4">
-        <Component {...pageProps} />
-      </main>
-      <Footer />
+      <div className="container mx-auto md:px-8 lg:px-16 xl:px-32">
+        <Nav />
+        <main className="container mx-auto my-8 px-4">
+          <Component {...pageProps} />
+        </main>
+        <Footer />
+      </div>
     </>
   )
 }
