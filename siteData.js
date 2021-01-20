@@ -1,6 +1,5 @@
 const siteData = {
   title: "The Innovation Brothers",
-  shortTitle: "Innov Bros",
   navItems: [
     {
       name: "Home",
@@ -12,7 +11,7 @@ const siteData = {
     },
     {
       name: "Blog",
-      path: "/blog-posts",
+      path: "/blog",
     },
     {
       name: "Services",

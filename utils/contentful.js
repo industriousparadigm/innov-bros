@@ -6,8 +6,33 @@ const client = require("contentful").createClient({
   accessToken: accessToken,
 })
 
-export async function fetchEntries() {
-  const entries = await client.getEntries()
-  if (entries.items) return entries.items
-  console.log(`Error getting blog posts from Contentful.`)
+export const fetchBlogPosts = async () => {
+  try {
+    const contentfulResponse = await client.getEntries({
+      content_type: "blogPost",
+    })
+    return contentfulResponse.items
+  } catch (error) {
+    console.error({
+      message: "Error getting blog posts from Contentful.",
+      error,
+    })
+    return []
+  }
+}
+
+export const fetchBlogPost = async (slug) => {
+  try {
+    const contentfulResponse = await client.getEntries({
+      content_type: "blogPost",
+      "fields.slug[in]": slug,
+    })
+    return contentfulResponse.items
+  } catch (error) {
+    console.error({
+      message: `Error getting blog post "${slug}" from Contentful.`,
+      error,
+    })
+    return []
+  }
 }

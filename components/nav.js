@@ -5,7 +5,7 @@ import Link from "next/link"
 export default function Nav() {
   return (
     <nav className="flex flex-wrap justify-center sticky top-0 bg-white lg:mb-12 z-10">
-      <div className="w-2/3 py-4 md:w-1/2 lg:w-1/4">
+      <div className="w-72 py-4 sm:w-1/3 md:w-1/3 lg:w-1/4">
         <Link href="/">
           <img
             className="cursor-pointer"

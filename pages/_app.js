@@ -7,7 +7,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>Innov Bros</title>
+        <title>The Innovation Brothers</title>
         <link
           rel="apple-touch-icon"
           sizes="180x180"
