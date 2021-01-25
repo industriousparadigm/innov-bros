@@ -1,5 +1,5 @@
-import Heading from "../components/heading"
-import Paragraph from "../components/paragraph"
+import Heading from "../components/heading";
+import Paragraph from "../components/paragraph";
 
 export default function ServicesPage() {
   return (
@@ -9,7 +9,7 @@ export default function ServicesPage() {
         innovative by identifying, creating and realizing growth opportunities
         through innovation.
       </Heading>
-      <div className="w-full lg:w-4/5 mx-auto mb-8 md:my-16 relative">
+      <div className="w-full mb-8 md:my-16 relative">
         <img src="/innovbros-key-activities.png" alt="key activities" />
       </div>
       <section className="mb-6">
@@ -31,5 +31,5 @@ export default function ServicesPage() {
         of the project with different tools and methodologies.
       </Paragraph>
     </>
-  )
+  );
 }

@@ -1,7 +1,7 @@
-import siteData from "../../siteData"
-import Heading from "../../components/heading"
-import { fetchBlogPosts } from "../../utils/contentful"
-import Link from "next/link"
+import siteData from "../../siteData";
+import Heading from "../../components/heading";
+import { fetchBlogPosts } from "../../utils/contentful";
+import Link from "next/link";
 
 const Blogs = ({ posts }) => {
   return (
@@ -17,7 +17,7 @@ const Blogs = ({ posts }) => {
                   By {post.author || siteData.title}
                 </p>
                 <img
-                  className="w-full md:w-2/3 mb-4"
+                  className="w-full mb-4"
                   src={post.posterImages?.[0]?.fields.file.url}
                 />
                 <p className="mb-4">{post.previewText}</p>
@@ -30,20 +30,20 @@ const Blogs = ({ posts }) => {
         ))}
       </ul>
     </>
-  )
-}
+  );
+};
 
 export async function getStaticProps() {
-  const res = await fetchBlogPosts()
+  const res = await fetchBlogPosts();
   const posts = res.map((post) => {
-    return post.fields
-  })
+    return post.fields;
+  });
 
   return {
     props: {
-      posts,
-    },
-  }
+      posts
+    }
+  };
 }
 
-export default Blogs
+export default Blogs;
