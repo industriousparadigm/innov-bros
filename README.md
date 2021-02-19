@@ -4,6 +4,7 @@ A website for the Portuguese company of the same name. [Check it out live](https
 
 ## Tech used
 
-- [Tailwind CSS](https://tailwindcss.com)
 - [NextJS](https://nextjs.org)
+- [Netlify](https://www.netlify.com)
+- [Tailwind CSS](https://tailwindcss.com)
 - [Contentful](https://www.contentful.com)
